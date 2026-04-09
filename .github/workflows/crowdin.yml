@@ -1,13 +1,13 @@
 name: Crowdin Action
 
-on:
+于:
    workflow_dispatch:
    push:
-     branches: [ master ]
+     分支: [ master ]
      paths:
        - app/src/main/res/values/strings.xml
-   schedule:
-     - cron: '0 0 * * *'
+  # schedule:
+   #  - cron: '0 0 * * *'
 
 permissions:
   contents: write
